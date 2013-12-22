@@ -16,6 +16,16 @@ This code is not beautiful or well organized. The author learned Inform 7 while 
 
 That said, it works, and demonstrates various (though by no means all) key features of the Inform language and development system. This includes a complete skein file that acts as an effective regression-test suite for the game, leading its automated player down every significant story-path. 
 
+## What's included
+
+This source release includes:
+
+* This README file, and a corresponding LICENSE file.
+
+* A `Warbler.inform` bundle, ready for opening with the Inform IDE. It contains the story source and the skein, more or less as it stood when I finished creating the game in 2010.
+
+* The game's cover art.
+
 ## Making it go
 
 First, download and install the latest version of [Inform](http://inform7.com) in a matter befitting your computer. Then open `warbler.inform` with Inform. Poof, you should see the story's source code in the Inform IDE. Hitting the IDE's __Go!__ button should, indeed, compile the game and make it go.
