@@ -12,9 +12,9 @@ The game is quite short, taking perhaps about half an hour for an experienced pl
 
 ## About the code
 
-This code is not beautiful or well organized. The author learned Inform 7 while writing this game, and shipped the game's first version before reading [a book about Inform 7 best practices](http://inform7.textories.com).
+This code is not beautiful or well organized. The author learned Inform 7 while writing this game, and shipped the game's first version before reading [a book about Inform 7 best practices](http://inform7.textories.com) with its [corresponding example code](http://inform7.textories.com/sand-dancer/) (which happens to be an excellent game in its own right).
 
-That said, it works, and demonstrates various (though by no means all) key features of the Inform language and development system. This includes a complete skein file that acts as an effective regression-test suite for the game, leading its automated player down every significant story-path. 
+That said, the code in this repository works, and demonstrates various (though by no means all) key features of the Inform language and development system. This includes a complete skein file that acts as an effective regression-test suite for the game, leading its automated player down every significant story-path. 
 
 ## What's included
 
