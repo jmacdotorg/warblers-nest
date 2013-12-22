@@ -9,7 +9,7 @@ The story headline is "A fairy tale".
 The story description is "A short story about a troubled soul, searching for answers among the reeds."
 The story author is "Jason McIntosh".
 The story creation year is 2010.
-The release number is 21.
+The release number is 22.
 
 Release along with cover art, a website, a solution, and an interpreter.
 
@@ -557,7 +557,7 @@ Instead of taking the foodgarden, say "This is not the time to prepare supper."
 
 The stakes are scenery in the garden. "Some of your plants need these stakes to help them grow.[if the stake is untouched][paragraph break]Most have tomatoes and such wrapped around them, but one to the side is bare." Understand "stake" as the stakes. The stakes have the printed name "stakes in the garden."
 
-The rocks are scenery in the garden. "These rocks don't really serve the garden in any way that you can tell -- maybe the keep the reeds back? -- but they look nice.[if the rock is untouched][paragraph break]One or two of them seem to sit loosely enough in the earth to pick up, if you wanted to." Understand "rock", "line", "stone", "stones", "line", "uneven", "uneven line", "uneven line of rocks" as the rocks. The rocks have printed name "uneven line of rocks."
+The rocks are scenery in the garden. "These rocks don't really serve the garden in any way that you can tell -- maybe they keep the reeds back? -- but they look nice.[if the rock is untouched][paragraph break]One or two of them seem to sit loosely enough in the earth to pick up, if you wanted to." Understand "rock", "line", "stone", "stones", "line", "uneven", "uneven line", "uneven line of rocks" as the rocks. The rocks have printed name "uneven line of rocks."
 
 The cottage is scenery in the garden with description "You have lived here as long as you care to remember. And alone, for long enough that its thatched roof is increasingly your own work.[if location is the garden][paragraph break]Its doorway is to the east." Understand "roof", "thatched roof", "house", "home" as the cottage.
 
