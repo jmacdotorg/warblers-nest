@@ -6,7 +6,7 @@ If you just want to _play_ the game, you don't want to be here. [Visit the game'
 
 ## About the game
 
-[_The Warbler's Nest_] was originally written as an entry to the 2010 [interactive fiction competition](http://ifcomp.org). Since then it won 2010's [XYZZY Award](http://xyzzyawards.org) for Best Story, and [has been commercially adapted to iOS](http://orangepeelgames.com/the-warblers-nest.html) by way of [Andrew Plotkin's IosFizmo](https://github.com/erkyrath/iosfizmo). 
+[_The Warbler's Nest_](http://jmac.org/warbler) was originally written as an entry to the 2010 [interactive fiction competition](http://ifcomp.org). Since then it won 2010's [XYZZY Award](http://xyzzyawards.org) for Best Story, and [has been commercially adapted to iOS](http://orangepeelgames.com/the-warblers-nest.html) by way of [Andrew Plotkin's IosFizmo](https://github.com/erkyrath/iosfizmo). 
 
 The game is quite short, taking perhaps about half an hour for an experienced player to explore thoroughly. Obviously, the author recommends that you [play the game](http://jmac.org/warbler) at least once before reading the source code.
 
