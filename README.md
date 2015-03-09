@@ -28,9 +28,13 @@ This source release includes:
 
 ## Making it go
 
-First, download and install the latest version of [Inform](http://inform7.com) in a matter befitting your computer. Then open `warbler.inform` with Inform. Poof, you should see the story's source code in the Inform IDE. Hitting the IDE's __Go!__ button should, indeed, compile the game and make it go.
+First, download and install the latest release of [Inform](http://inform7.com) in a matter befitting your computer. Then open `warbler.inform` with Inform. Poof, you should see the story's source code in the Inform IDE. Hitting the IDE's __Go!__ button should, indeed, compile the game and make it go.
 
-Then, I suppose, you'll want to proceed to mess around with the code and see what happens in the game world as you do so. Have fun!
+**Unfortunately, it doesn't,** at least not with the actual latest release of Inform. The code in this repository was last successfully compiled using [Inform 7 release 6G60](http://inform7.com/download/release/6G60/). Subsequent releases to I7 introduced changes that cannot cope with the _Warbler's Nest_ source found here.
+
+Therefore, if you would like to play with a working version of this game's source immediaitely, you should [download an earlier release of I7](http://inform7.com/download/release/6G60/) first. 
+
+If you'd like to have a go at updating the source to work with a post-6G60 release, please do! I would quite welcome pull requests.
 
 ## License 
 
