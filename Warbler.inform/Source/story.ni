@@ -1,4 +1,3 @@
-Include Plurality by Emily Short.
 Include Extended Grammar by Aaron Reed.
 Include Basic Help Menu by Emily Short.
 Use no scoring.
@@ -51,7 +50,7 @@ Your hands are part of the player. The description is "[if the baby is crying an
 
 Instead of taking the shift, try taking off the shift.
 Instead of dropping the shift, try taking off the shift.
-Before of taking off the shift, say "You've no need to disrobe now." instead.
+Before taking off the shift, say "You've no need to disrobe now." instead.
 
 After examining the shift for the first time, say "[italic type]'There,' said the visiting tailor, finishing his work. 'That will see you through for another year.'[line break][line break]You thanked him, and saw him out, away from the commotion. After some time absently strolling around your little garden together, exchanging small news and pleasantries, he paused, visibly uncomfortable.[line break][line break]'I travel quite a bit in my work, you know,' he began, slowly. 'And I've seen plenty of the mischief that the Small Folk can do.'[line break][line break]'I... what?' you stumbled, unsettled by the strange subject change. He looked directly into your eyes for two beats before continuing..."
 
@@ -118,7 +117,7 @@ Swimming is an action applying to nothing. Swimming in is an action applying to 
 
 Instead of swimming or swimming in, say "No place to do that, here."
 
-Before of praying while in the graves, try examining the eye instead.
+Before praying while the player is in the graves, try examining the eye instead.
 
 Naming is an action applying to one visible thing. Understand "name [something]" as naming.
 Carry out naming:
@@ -188,6 +187,8 @@ Understand "hush [something]", "cuddle [something]", "soothe [something]", "calm
 
 Understand "peel [something]" as opening.
 
+Singing is an action applying to one thing.
+
 Instead of singing during Crisis, say "You know from experience that singing does little good now, while [the baby] is fully caught up in [the baby possessive] crying fits."
 
 Instead of singing, say "Now is not the time."
@@ -223,7 +224,7 @@ The reed backdrop is a backdrop. It is in the garden and the graves. Understand 
 
 The distantCottage is a backdrop with printed name "cottage". It is in the Reed Banks. Understand "home", "hut", "doorway", "cottage", "hovel", "roof", "thatched", "thatched roof", and "house" as the distantCottage. It has the description "Its familiar thatched roof rises over the reed-tops in the distance." Instead of entering the distantCottage, say "Your cottage is north from here."
 
-The cottage is a backdrop. It is in the garden and the graves. Instead of entering the cottage while in the graves, say "You're behind the cottage. The doorway's on the other side." Understand "doorway" as the cottage.
+The cottage is a backdrop. It is in the garden and the graves. Instead of entering the cottage while the player is in the graves, say "You're behind the cottage. The doorway's on the other side." Understand "doorway" as the cottage.
 
 The forest is a backdrop. It is in the Outdoors. It has the description "The green of the nearby forest seems thicker today. The shadows, thicker." Understand "shadows", "wood", "woods", "trees" as the forest.
 
@@ -351,13 +352,13 @@ Instead of searching the reeds:
 		say "Careful not to disturb the nest, you poke through the ground around it. Your efforts are rewarded: Not far away, among a small pile of the birdish refuse on the ground, lies a small egg.";
 		Move the refuse pile to the MiddleReeds;
 		Move the cracked eggshell to the middlereeds;
-	otherwise if the invisible bird is in the MiddleReeds:
+	otherwise if invisible bird is in the MiddleReeds:
 		try examining the invisible bird;
 	otherwise:
 		say "You part the reeds nearest you and peer at the marshy ground underneath them, but find nothing useful.";
 
 Before examining the reeds:
-	If the invisible bird is in the MiddleReeds:
+	If invisible bird is in the MiddleReeds:
 		instead try searching the reeds.
 
 Instead of searching the refuse pile, [try searching the reeds.] try examining the refuse pile. The refuse pile has the description "Collected under the nest is a small pile of bird-leavings.[if the cracked eggshell is in the middlereeds][paragraph break]You spy a small egg lying among the offal."
@@ -386,8 +387,8 @@ Instead of taking the reeds, say "Many's the time you have come here to gather r
 The MiddleReeds is a room with printed name "Among the reeds". The description is "The familiar reed bank behind your cottage surrounds you, filling the damp space between your home and the river to the south."
 
 To say flittiness:
-	If the invisible bird is in the middlereeds and the flittiness of the invisible bird is true:
-		Now the flittiness of the invisible bird is false;
+	If invisible bird is in the middlereeds and the flittiness of invisible bird is true:
+		Now the flittiness of invisible bird is false;
 		say "[paragraph break]In the corner of your eye: a flitting shadow within the reeds, near a particularly tall stalk. That bird, again?[run paragraph on]".
 
 Instead of going north from the MiddleReeds for the first time:
@@ -398,7 +399,7 @@ Instead of going north from the MiddleReeds for the first time:
 		Say "[line break]";
 		Deliver the eggshell flashback;
 
-After entering the MIddleReeds while the invisible bird is in the MiddleReeds for the first time, now the flittiness of the invisible bird is true.	
+After entering the MIddleReeds while invisible bird is in the MiddleReeds for the first time, now the flittiness of invisible bird is true.	
 
 Instead of going up in the middlereeds, say "Nothing for you up there." Instead of going down in the middlereeds, say "You're already earthbound."
 
@@ -422,7 +423,7 @@ Instead of examining the fake stalk for the first time:
 	Say "You walk towards the tall reed, but find yourself confused as you draw near. This doesn't seem like the place you found the nest earlier. Looking again around the reed bed, you see a number of flowering reeds just as tall as this one, and that nest is nowhere that you can see.[paragraph break]For a handspan of a moment, the breeze settles, and the reeds['] rustling stops.[if the player has been in the garden]And again, the silence from the cottage presses down on you.[otherwise]Something seems wrong, in the silence. You find yourself looking to your cottage.";
 	Now the fake stalk is scenery;
 
-Instead of listening while in the reed banks, say "You pause, listening as the reeds rustle in the gentle breeze, willing the familiar whispering to steady your mind and hands."
+Instead of listening while the player is in the reed banks, say "You pause, listening as the reeds rustle in the gentle breeze, willing the familiar whispering to steady your mind and hands."
 
 Instead of looking under the reeds, try searching the reeds.
 
@@ -480,11 +481,11 @@ Instead of inserting the river into an eggshell (called the eggshell):
 		Now the chosen blob is a random thing in Water Limbo;
 		Move the chosen blob to the eggshell;
 		
-Instead of inserting the river into two eggshells:
+[PV COMMENT][Instead of inserting the river into two eggshells:
 	say "One by one, you dip the eggshells into the river. Careful as you can manage, you stand back up again. You now hold two water-filled eggshells, one in each hand.";	
 	Repeat with eggshell running through every empty eggshell carried by the player:
 		Now the chosen blob is a random thing in Water Limbo;
-		Move the chosen blob to the eggshell;
+		Move the chosen blob to the eggshell;]
 	
 Instead of taking the river:
 	If the player carries exactly one eggshell and the player carries exactly one waterfilled eggshell:
@@ -518,8 +519,8 @@ The sand is scenery in the beach. Understand "beach" as the sand. The sand has d
 
 Instead of doing anything except examining or taking with a water blob (called the blob), try taking the blob.
 
-Instead of going the reeds in the beach, try going north.
-Instead of entering the reeds while in the beach, try going north.
+Instead of going the reeds when the player is in the beach, try going north.
+Instead of entering the reeds while the player is in the beach, try going north.
 
 Chapter 2 - The Garden
 
@@ -629,7 +630,7 @@ Instead of going west in the garden, try going RoadTravel.
 
 Instead of going nowhere in the garden, say "Nothing that way...[paragraph break]Your cottage's doorway lies to the east, and the reed banks whisper to the south. There's also that clearing behind your cottage."
 
-RoadTravel is a direction. Understand "road", "path", "down road", "down path", "enter road", "use road" as RoadTravel. The opposite of RoadTravel is anti-RoadTravel.
+RoadTravel is a direction. Understand "road", "path", "down road", "down path", "enter road", "use road" as RoadTravel. [PV COMMENT][The opposite of RoadTravel is anti-RoadTravel.]
 [Instead of going RoadTravel in the garden, try going west.]
 Before going RoadTravel: say "You could start down the road now, but it would be getting on dark by the time you got anywhere. All that's in between is forest, and you've no business there."; Stop the action.
 
@@ -641,12 +642,12 @@ Before entering RoadTravel: Try going RoadTravel; Stop the action.
 
 Instead of going northeast in the graves, try going RoadTravel.
 
-Instead of going the reed backdrop in outdoors, try going south.
-Instead of entering the reed backdrop while in outdoors, try going south.
+Instead of going the reed backdrop when the player is in outdoors, try going south.
+Instead of entering the reed backdrop while the player is in outdoors, try going south.
 
 Section 1 - Listening to stuff in the garden 
 
-Instead of listening while in the garden:
+Instead of listening while the player is in the garden:
 	If the soft sound is in the garden:
 		Try listening to the soft sound;
 	otherwise if the silence is known:
@@ -747,7 +748,7 @@ Instead of attacking the stoat:
 [ Instead of stabbing the stoat, try attacking the stoat. ]
 
 Instead of searching the log:
-	If the stoat is not in the graves and the stoat carries the eggshell:
+	If the stoat is not in the graves and the stoat carries the whole eggshell:
 		Move the stoat to the graves;
 		say "[If the current weapon is not nothing]Tightening your grip on [the current weapon], y[otherwise]Y[end if]ou peer behind [the log], so that you can see the whole of the mushroom ring, and whatever else might sit inside it.[line break][line break]You see it. A skinny little man, wearing a... a fur coat, and a spotted cap? It's lying down, right in the center of the fairy ring, damn it all, and its tail twitches as it... oh.[line break][line break]You let go the breath you hadn't realized you were holding. No, it's not a little man. Though it is another sort of forest creature, true enough, and maybe no less wicked, in its way.[paragraph break]And that 'cap' does catch your attention...";
 		Remove the soft sound from play;
@@ -877,7 +878,7 @@ Expecting an answer is a truth state that varies. Expecting an answer is false.
 [ So, this bit could probably be done with regular expressions instead...
 but this feels more correct somehow, to be aware of the semantics. ]
 [Setting action variables for doing anything in indoors:]
-Before doing anything in indoors:
+Before doing anything when the player is in indoors:
 	If the noun is the changeling:
 		If the baby is loved:
 			Reprimand the player instead;
