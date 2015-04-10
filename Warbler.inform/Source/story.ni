@@ -8,7 +8,7 @@ The story headline is "A fairy tale".
 The story description is "A short story about a troubled soul, searching for answers among the reeds."
 The story author is "Jason McIntosh".
 The story creation year is 2010.
-The release number is 22.
+The release number is 23.
 
 Release along with cover art, a website, a solution, and an interpreter.
 
@@ -773,7 +773,7 @@ Every turn while the louder sound is in the location:
 	If a random chance of 1 in 2 succeeds:
 		Say "[one of]You hear that snuffling noise again, from somewhere very near.[or]That one noise within the silence is very close by.[or]The shuffling, grating noise stops, then resumes.[as decreasingly likely outcomes]".
 
-Every turn while the stoat in the location:
+Every turn while the stoat is in the location:
 	If a random chance of 1 in 2 succeeds:
 		Say "[one of]Heedless of your standing there, the stoat continues lapping noisily at the spotted egg, its paws grasping the shell.[or]The stoat keeps eating, unwilling to let the smallest morsel escape. Clearly, it's not giving up that egg until it's done, and who knows when that will be.[or]The stoat continues its loud meal.[stopping]".
 
@@ -1130,10 +1130,11 @@ Before dropping the baby:
 The baby can be loved, hated, or neither. The baby is neither.
 The baby can be silent, crying, or sniffling. The baby is silent.
 
-There is a weapon called the pair of cold iron shears. The shears have the initial appearance "A pair of iron shears lies on the table, wedged open." The pair is ambiguously plural. The pair has the description "Not the sort of tool you usually use for thatching, these were left here for a different purpose. One not so sure as shaping reeds, weaving them. There, at least, you know when you're done, when it works." The shears are stabby. The shears are undescribed. The shears are on the table.
+There is a weapon called the pair of cold iron shears. The pair is ambiguously plural. The pair has the description "Not the sort of tool you usually use for thatching, these were left here for a different purpose. One not so sure as shaping reeds, weaving them. There, at least, you know when you're done, when it works." The shears are stabby. The shears are undescribed. The shears are on the table.
 
 Before examining the table for the first time:
 	Now the shears are described;
+	Now the initial appearance of the shears is "A pair of iron shears lies on the table, wedged open.";
 	Continue the action;
 
 Instead of closing the shears:
