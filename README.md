@@ -30,8 +30,12 @@ This source release includes:
 
 First, download and install the latest release of [Inform](http://inform7.com) in a matter befitting your computer. Then open `warbler.inform` with Inform. Poof, you should see the story's source code in the Inform IDE. Hitting the IDE's __Go!__ button should, indeed, compile the game and make it go.
 
+## Contributors
+
+Thanks to [Paul Vaughan](https://github.com/vaughany) for helping to update the story sourse for compatibility with Inform 7 version 6L38.
+
 ## License 
 
-This work is copyright (c) 2010-2013 by Jason McIntosh.
+This work is copyright (c) 2010-2015 by Jason McIntosh.
 
 For more details, please see the file `LICENSE.md`, found in the same directory as the file you are now reading.
